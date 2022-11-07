@@ -23,3 +23,7 @@ services:
     volumes:
       - ./db:/app/db
       - /etc/wireguard:/etc/wireguard
+
+networks:
+  proxy:
+    external: true
